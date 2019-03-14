@@ -43,7 +43,7 @@ def self.artist_count
 end
 
 b.each do |k, v|
-puts "#{k} => #{v} times"
+tracker.push "#{k} => #{v} times"
 end
 end
 
