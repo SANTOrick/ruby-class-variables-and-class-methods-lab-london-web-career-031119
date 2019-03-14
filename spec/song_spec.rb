@@ -82,14 +82,3 @@ describe "Song" do
     end
   end
 end
-
-class Message
-    @@messagessent = 0
-
-    def initialize(from, to)
-        @from = from
-        @to = to
-        @@messagessent+=1
-    end
-
-end
