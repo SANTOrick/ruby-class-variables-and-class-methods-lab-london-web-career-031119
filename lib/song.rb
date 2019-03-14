@@ -37,7 +37,7 @@ def self.genre_count
 end
 
 def self.artist_count
-  b = a.inject(Hash.new(0)) {|h,i| h[i] += 1; h }
+  b = @@artists.inject(Hash.new(0)) {|h,i| h[i] += 1; h }
   b.to_a.each {|error,count| puts "#{error} => #{count}" }
 end
 
