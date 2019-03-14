@@ -37,14 +37,8 @@ def self.genre_count
 end
 
 def self.artist_count
-  tracker = Hash.new(0)
-@@artists.each do |v|
-  b[v] += 1
-end
-
-b.each do |k, v|
-tracker.push "#{k} => #{v} times"
-end
+  b = a.inject(Hash.new(0)) {|h,i| h[i] += 1; h }
+  b.to_a.each {|error,count| puts "#{error} => #{count}" }
 end
 
 end
