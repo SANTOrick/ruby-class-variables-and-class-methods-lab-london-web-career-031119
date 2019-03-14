@@ -43,8 +43,6 @@ def self.artist_count
 end
 
 b.each do |k, v|
-  puts "#{k} => #{v} times"
-end
 puts "#{k} => #{v} times"
 end
 
