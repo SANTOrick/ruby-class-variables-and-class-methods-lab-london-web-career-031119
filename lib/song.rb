@@ -33,11 +33,19 @@ end
 
 
 def self.genre_count
-@@genre_count
+  {}
 end
 
 def self.artist_count
+  tracker = Hash.new(0)
+@@artists.each do |v|
+  b[v] += 1
+end
 
+b.each do |k, v|
+  puts "#{k} => #{v} times"
+end
+  {}
 end
 
 
