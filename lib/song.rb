@@ -45,6 +45,6 @@ end
 b.each do |k, v|
 puts "#{k} => #{v} times"
 end
-
+end
 
 end
