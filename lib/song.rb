@@ -24,10 +24,10 @@ def self.count
 end
 
 def self.artists
-
+@@artists.length
 end
 
-def self.genre
+def self.genres
 
 end
 
